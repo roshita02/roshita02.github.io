@@ -1,28 +1,11 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { HiOutlineMail } from 'react-icons/hi';
-import { FcDocument } from 'react-icons/fc';
-import { i18n } from '../locale/i18n';
-import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
-import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
-import toast from 'react-hot-toast';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const CURRENT_KEY = localStorage.getItem('i18nextLng');
 
 const Sidebar = () => {
   const social = {
-    linkedin: 'https://www.linkedin.com/in/tiagocreator/',
-    github: 'https://github.com/tiagocreator',
-    email: 'mailto:contato@tiagocreator.com',
-  };
-
-  const resumeLink = CURRENT_KEY === 'pt-BR' ? ptResume : enResume;
-
-  const downloadResume = () => {
-    toast(i18n.t('header.resume.downloadMessage'), {
-      icon: <FcDocument size={28} />,
-      duration: 6000,
-    });
+    linkedin: 'https://www.linkedin.com/in/roshitashk/',
+    github: 'https://github.com/roshita02',
   };
 
   return (
@@ -47,24 +30,15 @@ const Sidebar = () => {
           GitHub <FaGithub size={30} />
         </a>
       </li>
-      <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#e22211]">
+
+      <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#2867B2]">
         <a
-          className="flex justify-around items-center w-full"
-          href={social.email}
-        >
-          Email <HiOutlineMail className="ml-4" size={30} />
-        </a>
-      </li>
-      <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#4E535E]">
-        <a
-          className="flex justify-around items-center w-full"
-          href={resumeLink}
-          download={i18n.t('header.resume.downloadName')}
-          rel="noreferrer"
+          className="flex justify-around items-center w-full "
+          href={social.twitter}
           target="_blank"
-          onClick={downloadResume}
+          rel="noreferrer"
         >
-          {i18n.t('header.resume.name')} <BsFillPersonLinesFill size={30} />
+          Twitter <FaTwitter size={30} />
         </a>
       </li>
     </ul>

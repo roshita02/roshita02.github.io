@@ -3,15 +3,9 @@ import { Link } from 'react-scroll';
 import { Menu, Transition } from '@headlessui/react';
 import { i18n } from '../locale/i18n';
 import Sidebar from './Sidebar';
-import toast from 'react-hot-toast';
 
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaExchangeAlt } from 'react-icons/fa';
-import { BsFillPersonLinesFill, BsChevronDown } from 'react-icons/bs';
-import { HiOutlineMail } from 'react-icons/hi';
-import { FcDocument } from 'react-icons/fc';
-
-import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
-import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
+import { BsChevronDown } from 'react-icons/bs';
 import Brackets from '../assets/images/logo/brackets-dark.png';
 import '../../node_modules/flag-icons/css/flag-icons.min.css';
 
@@ -34,18 +28,9 @@ const Navbar = () => {
   };
 
   const social = {
-    linkedin: 'https://www.linkedin.com/in/tiagocreator/',
-    github: 'https://github.com/tiagocreator',
-    email: 'mailto:contato@tiagocreator.com',
-  };
-
-  const resumeLink = CURRENT_KEY === 'pt-BR' ? ptResume : enResume;
-
-  const downloadResume = () => {
-    toast(i18n.t('header.resume.downloadMessage'), {
-      icon: <FcDocument size={28} />,
-      duration: 6000,
-    });
+    linkedin: 'https://www.linkedin.com/in/roshitashk/',
+    github: 'https://github.com/roshita02',
+    twitter: 'https://twitter.com/roshita_shakya'
   };
 
   return (
@@ -57,7 +42,7 @@ const Navbar = () => {
             src={Brackets}
             alt='logo'
           />
-          <h1 className='text-xl 2xl:text-2xl ml-4 font-bold'>Tiago Leite</h1>
+          <h1 className='text-xl 2xl:text-2xl ml-4 font-bold'>Roshita Shakya</h1>
         </div>
       </Link>
 
@@ -88,7 +73,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link onClick={handleClick} to='works' smooth={true} duration={600}>
-              {i18n.t('header.nav.works')}
+              {i18n.t('header.nav.experience')}
             </Link>
           </li>
           <li>
@@ -103,8 +88,8 @@ const Navbar = () => {
             <span className='fi fi-us -z-10'></span>
           </button>
           <FaExchangeAlt className='text-2xl mx-8' />
-          <button className='w-auto h-auto' value='pt-BR' onClick={changeLocale}>
-            <span className='fi fi-br -z-10'></span>
+          <button className='w-auto h-auto' value='de-DE' onClick={changeLocale}>
+            <span className='fi fi-de -z-10'></span>
           </button>
         </div>
         <ul className='w-[300px] flex justify-between items-center'>
@@ -118,21 +103,6 @@ const Navbar = () => {
               <FaGithub size={40} />
             </a>
           </li>
-          <li className='p-2.5 bg-[#e22211] rounded'>
-            <a href={social.email}>
-              <HiOutlineMail size={40} />
-            </a>
-          </li>
-          <li className='p-2.5 bg-[#4E535E] rounded'>
-            <a
-              href={resumeLink}
-              download={i18n.t('header.resume.downloadName')}
-              rel='noreferrer'
-              target='_blank'
-              onClick={downloadResume}>
-              <BsFillPersonLinesFill size={40} />
-            </a>
-          </li>
         </ul>
       </div>
 
@@ -142,7 +112,7 @@ const Navbar = () => {
           <Menu as='div' className='relative inline-block text-left'>
             <div>
               <Menu.Button className='inline-flex justify-center items-center w-full rounded border border-theme-white shadow-sm md:px-1.5 md:py-1.5 2xl:px-2 2xl:py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100'>
-                {CURRENT_KEY === 'pt-BR' ? 'PT' : 'EN'}
+                {CURRENT_KEY === 'de-DE' ? 'DE' : 'EN'}
                 <BsChevronDown className='-mr-1 ml-0.5 text-sm' aria-hidden='true' />
               </Menu.Button>
             </div>
@@ -173,13 +143,13 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <button
-                        value='pt-BR'
+                        value='de-DE'
                         className={classNames(
                           active ? 'bg-theme-white text-theme-black' : 'text-gray-700',
                           'w-full text-left block px-4 py-2 text-sm',
                         )}
                         onClick={changeLocale}>
-                        <span className='fi fi-br mr-2'></span>Português
+                        <span className='fi fi-de mr-2'></span>Deutsch
                       </button>
                     )}
                   </Menu.Item>
@@ -205,8 +175,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='cursor-pointer hover:text-white duration-200'>
-            <Link to='works' smooth={true} duration={600}>
-              {i18n.t('header.nav.works')}
+            <Link to='experience' smooth={true} duration={600}>
+              {i18n.t('header.nav.experience')}
             </Link>
           </li>
           <li className='cursor-pointer duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 hover:text-white active:text-white md:py-[4px] 2xl:py-1.5 px-2.5 rounded'>

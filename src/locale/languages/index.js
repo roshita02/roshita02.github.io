@@ -1,8 +1,8 @@
-import { content as portugueseContent } from './pt';
+import { content as deutschecontent } from './de';
 import { content as englishContent } from './en';
 
 const content = {
-  ...portugueseContent,
+  ...deutschecontent,
   ...englishContent,
 };
 

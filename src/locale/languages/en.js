@@ -6,84 +6,74 @@ const content = {
           home: 'Home',
           about: 'About',
           skills: 'Skills',
-          works: 'Works',
+          experience: 'Experience',
           contact: 'Contact',
-        },
-        resume: {
-          name: 'Resume',
-          downloadName: 'tiago-leite-resume',
-          downloadMessage: 'Downloading resume',
         },
       },
       homeSection: {
-        intro: "Hello, I'm Tiago Leite.",
-        welcome: 'Welcome to my portfolio',
+        intro: "Hello, I'm Roshita.",
+        welcome: 'Welcome to my Portfolio!',
         smallDescription: "I'm a",
         animatedTexts: {
-          textOne: 'front-end developer',
-          textTwo: 'web developer',
-          textThree: 'CSS wizard',
-          textFour: 'React developer',
-          textFive: 'JavaScript ninja',
-          textSix: 'UI engineer',
+          textOne: 'Full Stack Developer',
+          textTwo: 'Web Developer',
+          textThree: 'Software Engineer',
+          textFour: 'Go Developer',
+          textFive: 'RoR Developer',
+          textSix: 'Angular Developer',
         },
-        description: "I'm a self-taught and motivated front-end developer based in Brazil.",
+        description: "I specialize in creating efficient server-side architectures and optimizing database performance to drive seamless user experiences.",
         buttons: {
-          work: 'View Work',
           hire: 'Contact',
         },
       },
       aboutSection: {
         sectionName: 'About Me',
         description:
-          'As a passionate developer equipped with an impressive array of skills, I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. Beyond the lines of code, I am a problem solver at heart. Challenges are not roadblocks but opportunities to innovate and find elegant solutions.',
+          'As a dedicated developer with a diverse skill set, I thrive in creating and maintaining web applications that prioritize seamless user experience with robust performance. Beyond the realm of coding, I am inherently a problem solver, viewing challenges not as obstacles but as chances to innovate and discover refined solutions.',
       },
       skillsSection: {
         sectionName: 'Tech Stack',
         showMore: 'Show More',
         showLess: 'Show Less',
       },
-      worksSection: {
-        sectionName: 'Works',
-        intro:
-          'Amazing Front-End Experiences: Merging Design and Functionality. Here are some examples of my work.',
-        workElement: {
-          tools: 'Tools',
-          buttons: {
-            demo: 'Live Demo',
-            code: 'View Code',
-          },
-          featured: 'Featured Project',
+      experienceSection: {
+        sectionName: 'Professional Experience',
+        showMore: 'Show More',
+        showLess: 'Show Less',
+        first: {
+          name: 'Senior Software Engineer',
+          date: '[Nov 2021 - June 2023]',
+          company: 'Leapfrog Technology Nepal Pvt. Ltd',
+          subcompany: '',
+          skills: 'Go, AngularJS, Java, ReactJS, MongoDB',
+          link:'https://www.lftechnology.com/',
+          alt: 'LF'
         },
-        cineflix: {
-          name: 'Cineflix',
-          description:
-            'Database of movies mimicking the look of Netflix, it has integration with Firebase to create an account, login and save the movies to favorites.',
-          alt: 'cineflix website of movie and series information',
+        second: {
+          name: 'Software Engineer',
+          date: '[Feb 2020 - Oct 2021]',
+          company: 'Bajra Technologies Pvt. Ltd.',
+          subcompany: '',
+          skills: 'Ruby on Rails, Angular, Firebase, PostgreSQL',
+          link:'https://bajratechnologies.com/',
+          alt: 'Bajra'
+
         },
-        noir: {
-          name: 'Noir',
-          description:
-            'Noir is a website with an attractive, sophisticated, and functional design, dedicated to offering a complete barbershop experience.',
-          alt: 'noir barbershop website',
-        },
-        lasso: {
-          name: 'Lasso',
-          description:
-            'Complete e-commerce where users can create an account and log in, add products to a cart, shop, filter products by category, name, and brand, see the order list, and much more.',
-          alt: 'lasso online store',
-        },
-        casaECor: {
-          name: 'Casa&Cor',
-          description:
-            'An elegant renovation and decoration website with an intuitive, harmonious, and responsive design. Features a visual gallery, descriptive information, and dark mode.',
-          alt: 'renovation and decoration website',
+        third: {
+          name: 'Intern',
+          date: '[Aug 2019 - Nov 2019]',
+          company: 'Jyaasa Technologies Pvt. Ltd',
+          subcompany: '(currently Gurzu Inc.)',
+          skills: 'Ruby on Rails, HTML, CSS',
+          link:'https://gurzu.com/',
+          alt: 'Jyaasa'
         },
       },
       contactSection: {
         sectionName: 'Contact',
         intro:
-          'To contact me, fill out the form below, or if you prefer, contact me via LinkedIn or send an email. I am available for hire and open to any ideas of cooperation.',
+          'To contact me, fill out the form below, or if you prefer, contact me via LinkedIn. I am available for hire and open to any ideas of cooperation.',
         placeholders: {
           placeholderName: 'Name',
           placeholderMessage: 'Message',
@@ -96,6 +86,7 @@ const content = {
           error: 'Error! Please try again later.',
         },
       },
+      copyright_text: "All Rights Reserved.",
       footer: 'source',
     },
   },

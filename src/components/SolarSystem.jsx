@@ -1,6 +1,7 @@
 import { DiJavascript1, DiReact, DiGit } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
+import { SiTypescript, SiTailwindcss, SiFirebase, SiRubyonrails, SiGo, SiJavascript, SiAngular, SiRubygems, SiRuby } from 'react-icons/si';
 import { useState } from 'react';
+import { IoCodeSlash } from "react-icons/io5";
 
 const ReactSolarSystem = () => {
   const [isActive, setActive] = useState(false);
@@ -24,7 +25,7 @@ const ReactSolarSystem = () => {
           <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(169,146,95,0.2)] border-[2px] border-[#e44c30] text-[#e44c30] text-[1.4rem] leading-[26px] animate-travelOrbit10 origin-[50%_713%] transition-all duration-[1s]'>
             {/* Icon */}
             <span className='animate-unrotate10'>
-              <DiGit />
+              <SiAngular />
             </span>
           </div>
         </div>
@@ -34,7 +35,7 @@ const ReactSolarSystem = () => {
           <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(109,218,251,0.1)] border-[2px] border-[#58B1CF] text-[#58B1CF] text-[1.15rem] leading-[26px] animate-travelOrbit8 origin-[50%_597%] transition-all duration-[1s]'>
             {/* Icon */}
             <span className='animate-unrotate8'>
-              <SiTailwindcss />
+              <SiTypescript />
             </span>
           </div>
         </div>
@@ -44,7 +45,7 @@ const ReactSolarSystem = () => {
           <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(109,218,251,0.1)] border-[2px] border-[#3A74C0] text-[#3A74C0] text-[0.79rem] leading-[26px] animate-travelOrbit6 origin-[50%_480%] transition-all duration-[1s]'>
             {/* Icon */}
             <span className='animate-unrotate6'>
-              <SiTypescript />
+              <SiJavascript />
             </span>
           </div>
         </div>
@@ -54,7 +55,7 @@ const ReactSolarSystem = () => {
           <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(100,100,100,0.1)] border-[2px] border-[#EB7F25] text-[#EB7F25] text-[1.07rem] leading-[26px] animate-travelOrbit4 origin-[50%_363%] transition-all duration-[1s]'>
             {/* Icon */}
             <span className='animate-unrotate4'>
-              <SiFirebase />
+              <SiRuby />
             </span>
           </div>
         </div>
@@ -64,7 +65,7 @@ const ReactSolarSystem = () => {
           <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(109,218,251,0.1)] border-[2px] border-[#6ddafb] text-[#6ddafb] text-[1.1rem] leading-[26px] animate-travelOrbit2 origin-[50%_243%] transition-all duration-[1s]'>
             {/* Icon */}
             <span className='animate-unrotate2'>
-              <DiReact />
+              <SiGo />
             </span>
           </div>
         </div>
@@ -72,7 +73,7 @@ const ReactSolarSystem = () => {
 
       {/* Solar Top Circle */}
       <div className='panel flex items-center justify-center absolute inset-0 m-auto w-[33px] h-[33px] rounded-[50%] bg-[#ffeb00] shadow-[0_0_45px] shadow-[#ffeb00] text-[1.5rem] text-[#645c00]'>
-        <DiJavascript1 />
+        <IoCodeSlash />
       </div>
     </div>
   );
