@@ -1,22 +1,15 @@
 import SkillCard from './SkillCard';
 
 import {
-  SiTailwindcss,
   SiFirebase,
-  SiReact,
-  SiFigma,
   SiJavascript,
   SiTypescript,
   SiHtml5,
   SiCss3,
-  SiSass,
-  SiChakraui,
-  SiJest,
   SiGo,
   SiRubyonrails,
   SiPhp,
   SiAngular,
-  SiAngularjs,
   SiMongodb,
   SiPostgresql,
   SiGrafana,

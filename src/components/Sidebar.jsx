@@ -1,7 +1,5 @@
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-const CURRENT_KEY = localStorage.getItem('i18nextLng');
-
 const Sidebar = () => {
   const social = {
     linkedin: 'https://www.linkedin.com/in/roshitashk/',

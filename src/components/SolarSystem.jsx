@@ -1,5 +1,4 @@
-import { DiJavascript1, DiReact, DiGit } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss, SiFirebase, SiRubyonrails, SiGo, SiJavascript, SiAngular, SiRubygems, SiRuby } from 'react-icons/si';
+import { SiTypescript, SiGo, SiJavascript, SiAngular, SiRuby } from 'react-icons/si';
 import { useState } from 'react';
 import { IoCodeSlash } from "react-icons/io5";
 

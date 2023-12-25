@@ -1,6 +1,4 @@
 import Link from 'react-scroll/modules/components/Link';
-import toast from 'react-hot-toast';
-
 import { i18n } from '../locale/i18n';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -8,9 +6,6 @@ import Stars from './Stars';
 
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import ProfilePicture from '../assets/images/profile/me.jpg';
-
-// Language settings
-const CURRENT_KEY = localStorage.getItem('i18nextLng');
 
 const Home = () => {
   const social = {
