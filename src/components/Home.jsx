@@ -16,6 +16,7 @@ const Home = () => {
   const social = {
     linkedin: 'https://www.linkedin.com/in/roshitashk/',
     github: 'https://github.com/roshita02',
+    twitter: 'https://twitter.com/roshita_shakya'
   };
 
   const pictureStyle = {
