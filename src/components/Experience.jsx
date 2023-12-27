@@ -36,7 +36,7 @@ const Experience = () => {
             <div className="bg-[rgba(44,42,46,0.95)] hover:bg-[rgba(44,42,46,0.90)] p-4 rounded shadow-md text-center">
               <ExperienceElement
                   imgsrc={BajraLogo}
-                  imgSizeClass='w-[120px] h-[100px]'
+                  imgSizeClass='h-[100px]'
                   alt={i18n.t('experienceSection.second.alt')}
                   title={`${i18n.t('experienceSection.second.name')}`}
                   description={`${i18n.t('experienceSection.second.description')}`}
