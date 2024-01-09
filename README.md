@@ -1,4 +1,4 @@
 ## My Portfolio
 
 
-### :computer: [Link to My Portfolio](https://www.roshita02.github.io/)
+### :computer: [Link to My Portfolio](https://roshita02.github.io/)
