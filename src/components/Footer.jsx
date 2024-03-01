@@ -8,5 +8,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+// test comment
 export default Footer;
